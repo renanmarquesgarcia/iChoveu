@@ -119,7 +119,13 @@ export async function handleSearch(event) {
 
   const cities = await searchCities(searchValue);
   const urls = cities.map(({ url }) => url);
-  Promise.all(
+  const citiesWeather = Promise.all(
     urls.map((url) => getWeatherByCity(url)),
   );
+
+  const citiesWeatherList = document.querySelector('#cities');
+  (await citiesWeather).forEach((cityInfo) => {
+    const cityWeatherCard = createCityElement(cityInfo);
+    citiesWeatherList.appendChild(cityWeatherCard);
+  });
 }
