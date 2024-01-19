@@ -2,6 +2,8 @@
 
   Neste projeto, foi desenvolvido um site de previsão do tempo, nele o usuário é capaz de buscar por uma cidade e saber a temperatura atual, e a previsão do tempo dos próximos 7 dias. Para desenvolver o site aplico conhecimentos em JavaScript Assíncrono com a utilização de promises e do fetch para consumir dados diretamente de uma API.
 
+  Caso queira acessar o site: `https://i-choveu.vercel.app/`
+
 # Orientações
 
 <details>
